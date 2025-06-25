@@ -29,7 +29,7 @@ export class PokemonTableComponent implements OnInit {
       .pipe(takeUntilDestroyed(this.destroyRef))
       .subscribe({
         next: (result) => {
-          this.pokemon.set(result.data.pokemon.allPokemon);
+          this.pokemon.set(result.data.pokemon);
           this.loading.set(false);
         },
         error: (err) => {
