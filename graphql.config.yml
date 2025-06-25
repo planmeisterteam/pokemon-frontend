@@ -1,0 +1,11 @@
+schema: http://localhost:5001/graphql
+documents: '**/*.graphql'
+extensions:
+  codegen:
+    overwrite: true
+    generates:
+      src/generated/graphql.ts:
+        plugins:
+          - typescript
+          - typescript-operations
+          - typescript-apollo-angular

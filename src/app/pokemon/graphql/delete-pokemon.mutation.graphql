@@ -1,0 +1,5 @@
+mutation DeletePokemon($input: DeletePokemonInput!) {
+  deletePokemon(input: $input) {
+    pokemonId
+  }
+}
